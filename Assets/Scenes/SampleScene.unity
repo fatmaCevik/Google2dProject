@@ -699,6 +699,7 @@ MonoBehaviour:
   speed: 0
   rb: {fileID: 415070434}
   animator: {fileID: 415070435}
+  _camera: {fileID: 519420028}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
