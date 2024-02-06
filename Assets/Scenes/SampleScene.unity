@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 159020407}
   m_Layer: 0
   m_Name: platformPack_tilesheet@2_0 (2)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 277477946}
   m_Layer: 0
   m_Name: platformPack_tilesheet@2_0 (3)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 308337144}
   m_Layer: 0
   m_Name: platformPack_tilesheet@2_0 (4)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 415070436}
   - component: {fileID: 415070435}
   - component: {fileID: 415070434}
-  - component: {fileID: 415070438}
+  - component: {fileID: 415070439}
   - component: {fileID: 415070433}
   m_Layer: 0
   m_Name: Hero
@@ -684,7 +684,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &415070438
+--- !u!114 &415070439
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -693,13 +693,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 415070432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce100fc084069584db0ee3e9cd55e742, type: 3}
+  m_Script: {fileID: 11500000, guid: a059fa9dfdc4c984d972e45b56f0e1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  rb: {fileID: 415070434}
-  animator: {fileID: 415070435}
-  _camera: {fileID: 519420028}
+  jumpForce: 5
+  speed: 1
+  rd: {fileID: 415070434}
+  anim: {fileID: 415070435}
+  spriteRenderer: {fileID: 415070436}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,7 +807,7 @@ GameObject:
   - component: {fileID: 748465115}
   m_Layer: 0
   m_Name: platformPack_tilesheet@2_7
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -963,7 +964,7 @@ GameObject:
   - component: {fileID: 1081200121}
   m_Layer: 0
   m_Name: platformPack_tilesheet@2_0 (1)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1093,7 +1094,7 @@ GameObject:
   - component: {fileID: 1414142817}
   m_Layer: 0
   m_Name: platformPack_tilesheet@2_0
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

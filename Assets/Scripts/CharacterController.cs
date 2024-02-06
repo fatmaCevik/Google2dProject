@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    public float speed = 0.0f;
+    public float speed = 1.0f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
-    [SerializeField] private GameObject _camera;
+    [SerializeField] private GameObject mainCamera;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     private Vector3 charPos;
 
@@ -27,22 +28,30 @@ public class CharacterController : MonoBehaviour
 
     private void Update() //her frame çalýþýyor.
     {
-        if(Input.GetKey(KeyCode.Space))
+        charPos = new Vector3(charPos.x + (Input.GetAxis("Horizontal") * speed * Time.deltaTime), charPos.y);
+        transform.position = charPos; //Hesapladýðým pozisyon karakterime iþlensin
+
+        if(Input.GetAxis("Horizontal") == 0.0f)
         {
-            speed = 1.0f;
-            //Debug.Log("Hýz 1.0f");
+            animator.SetFloat("Speed", 0.0f);
         }
         else
         {
-            speed = 0.0f;
-            //Debug.Log("Hýz 0.0f"); 
+            animator.SetFloat("Speed", speed);
         }
-        charPos = new Vector3(charPos.x + (speed * Time.deltaTime), charPos.y);
-        transform.position = charPos; //Hesapladýðým pozisyon karakterime iþlensin
-        animator.SetFloat("Speed", speed);
+
+        if(Input.GetAxis("Horizontal") > 0.1f)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if(Input.GetAxis("Horizontal") < -0.1f)
+        {
+            spriteRenderer.flipX = true;
+        }
+        
     }
     private void LateUpdate()
     {
-        _camera.transform.position = new Vector3(charPos.x, charPos.y, charPos.z - 1.0f);
+        mainCamera.transform.position = new Vector3(charPos.x, charPos.y, charPos.z - 1.0f);
     }
 }
