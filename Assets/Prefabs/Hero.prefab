@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d49d74a79614a43809bc513869d4ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
+  scoreText: {fileID: 0}
   pickingSound: {fileID: 2712159513708365781}
 --- !u!82 &2712159513708365781
 AudioSource:
