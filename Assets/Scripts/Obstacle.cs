@@ -15,6 +15,7 @@ public class Obstacle : MonoBehaviour
     {   
         if (collision.gameObject.CompareTag("Player"))
         {
+            Score.lives--;
             SceneManager.LoadScene(_scene.name);
         }
     }
