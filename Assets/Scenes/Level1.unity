@@ -718,6 +718,7 @@ GameObject:
   - component: {fileID: 876692897}
   - component: {fileID: 876692896}
   - component: {fileID: 876692899}
+  - component: {fileID: 876692900}
   m_Layer: 0
   m_Name: ObstacleYellow1
   m_TagString: obstacle
@@ -839,6 +840,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23cc4659a3d96af4396eed4a4438ecc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &876692900
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876692895}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7a213282ad6417478c1bb27df2087cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &976658005
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +873,7 @@ GameObject:
   - component: {fileID: 976658008}
   - component: {fileID: 976658007}
   - component: {fileID: 976658006}
+  - component: {fileID: 976658010}
   m_Layer: 0
   m_Name: ObstacleGreen1
   m_TagString: Untagged
@@ -972,6 +995,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &976658010
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976658005}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7a213282ad6417478c1bb27df2087cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1020770675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,6 +1368,7 @@ GameObject:
   - component: {fileID: 1682442930}
   - component: {fileID: 1682442929}
   - component: {fileID: 1682442932}
+  - component: {fileID: 1682442933}
   m_Layer: 0
   m_Name: ObstacleYellow2
   m_TagString: obstacle
@@ -1445,6 +1490,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23cc4659a3d96af4396eed4a4438ecc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1682442933
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682442928}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7a213282ad6417478c1bb27df2087cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2000864585
 PrefabInstance:
   m_ObjectHideFlags: 0
