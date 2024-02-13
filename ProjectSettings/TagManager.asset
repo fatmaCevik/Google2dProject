@@ -6,6 +6,7 @@ TagManager:
   tags:
   - floor
   - obstacle
+  - diamond
   layers:
   - Default
   - TransparentFX
